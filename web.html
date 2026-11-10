@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zone — Good Food. No Waiting.</title>
+  <meta name="description" content="Zone delivers fresh food, bold flavors, and hot plates straight to your door.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero-card shell" id="top" aria-label="Zone">
+      <div class="hero-top">
+        <a class="logo" href="#top">
+          <span class="sr-only">Zone home</span>
+          <span aria-hidden="true">ZO</span>
+          <span aria-hidden="true">NE</span>
+        </a>
+        <nav class="site-nav" aria-label="Menu categories">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#dishes" data-filter="breakfast">Breakfast</a></li>
+            <li><a href="#dishes" data-filter="burgers">Burgers</a></li>
+            <li><a href="#dishes" data-filter="mains">Main Dishes</a></li>
+            <li><a href="#dishes" data-filter="pizza">Pizza</a></li>
+            <li><a href="#dishes" data-filter="pasta">Pasta</a></li>
+            <li><a href="#dishes" data-filter="salads">Salads</a></li>
+            <li><a href="#dishes" data-filter="desserts">Desserts</a></li>
+            <li><a href="#dishes" data-filter="drinks">Drinks</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-explore" href="#menu">Explore our menu</a>
+      </div>
+      <div class="hero-rule"></div>
+
+      <div class="hero-body">
+        <div class="hero-copy">
+          <h1>GOOD FOOD.<br><span>NO WAITING.</span></h1>
+          <p class="lede">Fresh food, bold flavors, delivered straight to your door.</p>
+          <a class="btn btn-order" href="#dishes">Order now <span aria-hidden="true">→</span></a>
+          <ul class="perks">
+            <li>
+              <strong>FAST DELIVERY</strong>
+              <span>30–60 min</span>
+            </li>
+            <li>
+              <strong>FRESH INGREDIENTS</strong>
+              <span>Quality guaranteed</span>
+            </li>
+            <li>
+              <strong>SECURE PAYMENT</strong>
+              <span>Pay safely online</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-art">
+          <img src="images/background.jpg" alt="Chalkboard spread of burgers, fries, hot dogs, and cold drinks">
+        </div>
+      </div>
+    </section>
+
+    <section class="panel shell" id="menu" aria-labelledby="menu-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">The menu</p>
+          <h2 id="menu-title">EIGHT WAYS<br>TO <span>EAT.</span></h2>
+        </div>
+        <p>Breakfast through a late lime soda. The kitchen starts your plate when the order lands.</p>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-card" href="#dishes" data-filter="breakfast">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <ellipse cx="18" cy="20" rx="11" ry="8"/>
+            <circle cx="18" cy="20" r="3" fill="currentColor" stroke="none"/>
+          </svg>
+          <strong>Breakfast</strong>
+          <span>12 plates</span>
+        </a>
+        <a class="cat-card" href="#dishes" data-filter="burgers">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M8 16c1-6 6-8 10-8s9 2 10 8"/>
+            <path d="M7 19h22M7 23h22"/>
+            <path d="M8 26c2 3 18 3 20 0"/>
+          </svg>
+          <strong>Burgers</strong>
+          <span>9 stacks</span>
+        </a>
+        <a class="cat-card" href="#dishes" data-filter="mains">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M8 24c2 4 18 4 20 0"/>
+            <path d="M10 24c1-8 15-8 16 0"/>
+            <path d="M18 10v6"/>
+          </svg>
+          <strong>Main Dishes</strong>
+          <span>14 plates</span>
+        </a>
+        <a class="cat-card" href="#dishes" data-filter="pizza">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 7l12 20H6L18 7z"/>
+            <circle cx="18" cy="18" r="1.4" fill="currentColor"/>
+            <circle cx="15" cy="22" r="1.2" fill="currentColor"/>
+          </svg>
+          <strong>Pizza</strong>
+          <span>8 pies</span>
+        </a>
+        <a class="cat-card" href="#dishes" data-filter="pasta">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M8 16h20v8c0 5-20 5-20 0z"/>
+            <path d="M12 16c2-4 4-4 6 0M18 16c2-4 4-4 6 0"/>
+          </svg>
+          <strong>Pasta</strong>
+          <span>7 bowls</span>
+        </a>
+        <a class="cat-card" href="#dishes" data-filter="salads">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 28c-8-2-10-10-6-16 6 2 8 8 6 16z"/>
+            <path d="M18 28c8-2 10-10 6-16-6 2-8 8-6 16z"/>
+          </svg>
+          <strong>Salads</strong>
+          <span>6 bowls</span>
+        </a>
+        <a class="cat-card" href="#dishes" data-filter="desserts">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 16h12l-2 12H14z"/>
+            <path d="M13 16c2-6 8-6 10 0"/>
+            <path d="M18 8v3"/>
+          </svg>
+          <strong>Desserts</strong>
+          <span>5 sweets</span>
+        </a>
+        <a class="cat-card" href="#dishes" data-filter="drinks">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 10h12l-2 16H14z"/>
+            <path d="M18 8v4M16 26h4"/>
+          </svg>
+          <strong>Drinks</strong>
+          <span>11 glasses</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="panel shell" id="dishes" aria-labelledby="dishes-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">From the kitchen</p>
+          <h2 id="dishes-title">ORDER FROM<br>THE <span>LINE.</span></h2>
+        </div>
+        <p>Smash patties, blistered pies, and bowls that leave the pass hot. Add a few to your tray.</p>
+      </div>
+      <ul class="filters">
+        <li><button type="button" data-filter="all" class="is-active">All</button></li>
+        <li><button type="button" data-filter="breakfast">Breakfast</button></li>
+        <li><button type="button" data-filter="burgers">Burgers</button></li>
+        <li><button type="button" data-filter="mains">Main Dishes</button></li>
+        <li><button type="button" data-filter="pizza">Pizza</button></li>
+        <li><button type="button" data-filter="pasta">Pasta</button></li>
+        <li><button type="button" data-filter="salads">Salads</button></li>
+        <li><button type="button" data-filter="desserts">Desserts</button></li>
+        <li><button type="button" data-filter="drinks">Drinks</button></li>
+      </ul>
+      <div class="dish-grid">
+        <article class="dish" data-id="sunrise" data-name="Sunrise Stack" data-category="breakfast" data-price="11">
+          <div class="dish-art">
+            <img src="images/sunnyside.jpg" alt="Fried egg and avocado on toast">
+          </div>
+          <div>
+            <h3>Sunrise Stack</h3>
+            <p>Eggs, avocado, and chili oil on a toasted roll.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$11</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="classic" data-name="Zone Classic" data-category="burgers" data-price="14">
+          <div class="dish-art">
+            <img src="images/burger.jpg" alt="Stacked burger with cheese, tomato, onion, and sauce">
+          </div>
+          <div>
+            <h3>Zone Classic</h3>
+            <p>Smash patty, cheddar, pickles, and a soft potato bun.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$14</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="double" data-name="Loaded Dog" data-category="burgers" data-price="12">
+          <div class="dish-art">
+            <img src="images/hotdog.jpg" alt="Hot dog with cheese sauce, bacon, and fried onions">
+          </div>
+          <div>
+            <h3>Loaded Dog</h3>
+            <p>Poppy bun, cheddar sauce, bacon, and crisp onions.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$12</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="chicken" data-name="Herb Half Chicken" data-category="mains" data-price="18">
+          <div class="dish-art">
+            <img src="images/chicken.jpg" alt="Roasted chicken in a skillet with lemon and rosemary">
+          </div>
+          <div>
+            <h3>Herb Half Chicken</h3>
+            <p>Lemon, garlic, and a pile of peppery greens.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$18</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="margherita" data-name="Ember Pepperoni" data-category="pizza" data-price="16">
+          <div class="dish-art">
+            <img src="images/pizza.jpg" alt="Pepperoni pizza with a slice pulled away">
+          </div>
+          <div>
+            <h3>Ember Pepperoni</h3>
+            <p>Blistered crust, cupped pepperoni, and melted mozzarella.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$16</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="pepperoni" data-name="Firecracker Pepperoni" data-category="pizza" data-price="17">
+          <div class="dish-art">
+            <img src="images/pizza.jpg" alt="Pepperoni pizza with melted cheese">
+          </div>
+          <div>
+            <h3>Firecracker Pepperoni</h3>
+            <p>Cupped pepperoni, honey heat, and oregano.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$17</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="rigatoni" data-name="Peppercorn Rigatoni" data-category="pasta" data-price="15">
+          <div class="dish-art">
+            <img src="images/pasta.jpg" alt="Creamy pasta topped with grated cheese">
+          </div>
+          <div>
+            <h3>Peppercorn Rigatoni</h3>
+            <p>Cream, cracked pepper, and a snowfall of parmesan.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$15</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="citrus" data-name="Citrus Garden" data-category="salads" data-price="12">
+          <div class="dish-art">
+            <img src="images/salad.jpg" alt="Green salad with tomatoes, olives, and feta">
+          </div>
+          <div>
+            <h3>Citrus Garden</h3>
+            <p>Fennel, orange, and a sharp olive-oil dressing.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$12</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="cocoa" data-name="Cocoa Cloud" data-category="desserts" data-price="9">
+          <div class="dish-art">
+            <img src="images/cocoa.jpg" alt="Chocolate mousse topped with cream">
+          </div>
+          <div>
+            <h3>Cocoa Cloud</h3>
+            <p>Dark chocolate, cold cream, and a pinch of sea salt.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$9</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="dish" data-id="lime" data-name="Lime Soda" data-category="drinks" data-price="5">
+          <div class="dish-art">
+            <img src="images/lime.jpg" alt="Lime drink in a glass jar with fresh limes">
+          </div>
+          <div>
+            <h3>Lime Soda</h3>
+            <p>Crushed ice, mint, and a long squeeze of lime.</p>
+          </div>
+          <div class="dish-foot">
+            <strong>$5</strong>
+            <button class="btn btn-add" type="button" data-add>Add</button>
+          </div>
+        </article>
+      </div>
+      <p class="filter-empty" hidden>Nothing in that category is on the line right now.</p>
+    </section>
+
+    <section class="panel shell" id="how" aria-labelledby="how-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">How Zone works</p>
+          <h2 id="how-title">ON YOUR DOOR<br>IN UNDER <span>AN HOUR.</span></h2>
+        </div>
+        <p>The same three promises from the hero, spelled out. Hot food, short rides, payment that stays put.</p>
+      </div>
+      <div class="step-grid">
+        <article class="step">
+          <div class="step-num">01</div>
+          <h3>Fast delivery</h3>
+          <p>Pick from the line and send the order. Most doors see a rider in 30–60 minutes.</p>
+        </article>
+        <article class="step">
+          <div class="step-num">02</div>
+          <h3>Fresh ingredients</h3>
+          <p>Nothing waits under a lamp. Cooks fire the plate when your order hits the kitchen.</p>
+        </article>
+        <article class="step">
+          <div class="step-num">03</div>
+          <h3>Secure payment</h3>
+          <p>Pay online before the bag is sealed. Your receipt and drop-off stay on one screen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel shell" id="stories" aria-labelledby="stories-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Regulars</p>
+          <h2 id="stories-title">NEIGHBORS KEEP<br>COMING <span>BACK.</span></h2>
+        </div>
+        <p>Weeknight burgers, Friday pies, and the lime soda that shows up still cold.</p>
+      </div>
+      <div class="story-grid">
+        <article class="story">
+          <p class="stars" aria-label="5 stars">★★★★★</p>
+          <h3>Still crisp at the door</h3>
+          <p>The classic arrived hot, pickles still snappy, and the fries had not given up. That is the whole promise.</p>
+          <footer>Maya R.</footer>
+        </article>
+        <article class="story">
+          <p class="stars" aria-label="5 stars">★★★★★</p>
+          <h3>Friday pie, no fuss</h3>
+          <p>Ember Pepperoni in under an hour, crust still blistered. We have stopped pretending we will cook on Fridays.</p>
+          <footer>Andre P.</footer>
+        </article>
+        <article class="story">
+          <p class="stars" aria-label="5 stars">★★★★★</p>
+          <h3>Lunch that makes the meeting</h3>
+          <p>Sunrise Stack before a noon call, coffee still warm. The tray is easy and the total is clear before you pay.</p>
+          <footer>Lina S.</footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel shell order" id="order" aria-labelledby="order-title">
+      <div class="order-copy">
+        <p class="eyebrow">Your order</p>
+        <h2 id="order-title">PACK THE<br><span>TRAY.</span></h2>
+        <p>Add plates from the line, change quantities, and send the order. This demo keeps everything on your machine — nothing is charged.</p>
+      </div>
+      <div class="tray">
+        <p class="tray-empty">Your tray is empty. Start with the menu.</p>
+        <ul class="tray-list"></ul>
+        <div class="tray-foot">
+          <span class="tray-total">Total $0</span>
+          <button class="btn btn-checkout" type="button" disabled>Place order</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="logo" href="#top">
+        <span class="sr-only">Zone home</span>
+        <span aria-hidden="true">ZO</span>
+        <span aria-hidden="true">NE</span>
+      </a>
+      <p>Fresh food, bold flavors, delivered straight to your door.</p>
+    </div>
+    <div>
+      <h2>Visit</h2>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#dishes">Order</a></li>
+        <li><a href="#how">Delivery</a></li>
+        <li><a href="#stories">Stories</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Kitchen</h2>
+      <ul>
+        <li>14 North Lane</li>
+        <li>Open every day</li>
+        <li>8:00 – 23:00</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Promises</h2>
+      <ul>
+        <li>30–60 min delivery</li>
+        <li>Cooked to order</li>
+        <li>Pay safely online</li>
+      </ul>
+    </div>
+    <p class="legal">© <span id="year">2026</span> Zone. Good food. No waiting.</p>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
